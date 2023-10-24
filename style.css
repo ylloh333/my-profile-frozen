@@ -1,0 +1,139 @@
+body{
+	/*background-color: rgb(40,72,99, 1.0*/
+	background-image: url('/Users/jingtongpan/Desktop/profile/image/froze.jpg');
+	background-repeat: no-repeat;  /* This prevents the image from repeating */
+    background-size: cover;        /* This ensures the image covers the entire viewport */
+    /*background-attachment: fixed;*/  /* This makes the background fixed during scroll */
+    background-position: center;  
+	text-align: center;
+	padding: auto;
+  	display: grid;
+  	justify-content: center;
+  	align-content: center
+  	font-family: 'Gluten', cursive;
+
+}
+
+img	{
+	width:150px;
+	border-radius: 50%;
+	border:10px solid skyblue;
+}
+
+h1{
+	color:rgb(40,72,99, 1.0);
+}
+
+h2{
+	color: rgb(40,72,99, 1.0);;
+}
+
+
+.card-white {
+  background-color: white;
+  padding: 50px 40px;
+  box-shadow: 0 10px 30px rgb(51,164,185,2.0);
+  border-radius: 50px;
+  text-align: center;
+  /*color:rgb(81,62,50,1.0);*/
+  margin: 40px;
+}
+
+ul{
+	padding: 0px;
+}
+
+ul li {
+	list-style: none;
+	margin:auto;
+	display:inline-block;
+	text-decoration:none
+}
+
+a{
+	text-decoration:none
+}
+
+.button{
+	background-color: rgb(40,72,99, 1.0);
+	color: rgb(236,243,241, 1.0);
+	width: 100px;
+	margin: 30px 20px;
+	padding: 20px ;
+	border: 20px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px rgb(3, 3, 10, 0.4);
+	transition: opacity 0.4s ease-in-out;
+}
+
+.button:hover{
+	opacity: 0.2;
+	color: rgb(186,245,237, 1.0);
+	padding:30px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  /*background-color: rgb(40,72,99);*/
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 600px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+  .button {
+    margin: 10px 5px;
+  }
+}
+
+
+.snowflake {
+  position: fixed;
+  font-size: 2em; 
+  color: white;
+  animation-name: fall;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.8;
+  z-index: 1;
+}
+.snowflake:nth-child(odd) {
+    font-size: 1.5em;
+}
+
+.snowflake:nth-child(3n) {
+    font-size: 1.8em;
+}
+/* You can add or adjust the starting positions as required */
+.snowflake:nth-child(1) { top: -10%; left: 5%; animation-delay: 0s; }
+.snowflake:nth-child(2) { top: -20%; left: 20%; animation-delay: 0.1s; }
+.snowflake:nth-child(3) { top: -15%; left: 40%; animation-delay: 0s; }
+.snowflake:nth-child(4) { top: -15%; left: 50%; animation-delay: 0.1s; }
+.snowflake:nth-child(5) { top: -30%; left: 80%; animation-delay: 0.2s; }
+.snowflake:nth-child(6) { top: -15%; left: 70%; animation-delay: 0.3s; }
+.snowflake:nth-child(7) { top: -30%; left: 90%; animation-delay: 0s; }
+.snowflake:nth-child(8) { top: -10%; left: 5%; animation-delay: 0.1s; }
+.snowflake:nth-child(9) { top: -20%; left: 20%; animation-delay: 0.2s; }
+.snowflake:nth-child(10) { top: -15%; left: 40%; animation-delay: 0.3s; }
+.snowflake:nth-child(11) { top: -15%; left: 50%; animation-delay: 0.1s; }
+.snowflake:nth-child(12) { top: -30%; left: 80%; animation-delay: 0.2s; }
+.snowflake:nth-child(13) { top: -15%; left: 70%; animation-delay: 0.1s; }
+.snowflake:nth-child(14) { top: -30%; left: 90%; animation-delay: 0.2s; }
+/* Continue with similar patterns for each snowflake */
+/* Adjust percentages and delays to spread out the snowflakes */
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh); // Change to vh for the full height of the viewport
+  }
+}
+
