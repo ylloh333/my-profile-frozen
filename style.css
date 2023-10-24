@@ -1,6 +1,6 @@
 body{
 	/*background-color: rgb(40,72,99, 1.0*/
-	background-image: url('/Users/jingtongpan/Desktop/profile/image/froze.jpg');
+	background-image: url('./image/froze.jpg');
 	background-repeat: no-repeat;  /* This prevents the image from repeating */
     background-size: cover;        /* This ensures the image covers the entire viewport */
     /*background-attachment: fixed;*/  /* This makes the background fixed during scroll */
